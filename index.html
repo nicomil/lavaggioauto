@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<style>
+		div.main{
+				height: 500px;
+				background: url(https://www.challenges.fr/assets/img/2017/08/23/cover-r4x3w1000-599dac63c891c-170577-ferrari-portofino-jpg.jpg) no-repeat center;
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+		div.title-snippet{
+				color:white; 
+				text-align: center;
+			}
+		.navigation{
+			display: none;
+		}
+	</style>
+	<link rel="preload" href="style.css" as="style">
+</head>
+<body>
+	<ul class="navigation">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Products</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<header>
+		<div class="main">
+
+			<div class="title-snippet">
+				<h1>Easy Renting</h1>	
+				<p style="font-size: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<button style="background-color: #db344d;border: 0px;padding:20px;color:white;font-size: 20px;font-weight: 600;">Scoprimi</button>
+			</div>
+
+		</div>
+	</header>
+	<div class="padre">
+		<div class="figlio">
+			<img src="https://cdn.drivek.it/configurator-imgs/cars/it/800/ALFA-ROMEO/GIULIA/3523_BERLINA-3-VOL-4-PORTE/alfa-romeo-giulia-quadrifoglio-promo.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cumque sapiente, praesentium suscipit? Explicabo, dignissimos beatae? Rem incidunt, eius adipisci pariatur quod dolore quibusdam veniam, beatae debitis illo ratione amet.</p>
+			<button>Compra</button>
+		</div>
+		<div class="figlio">
+			<img src="https://cdn.drivek.it/configurator-imgs/cars/it/800/ALFA-ROMEO/GIULIA/3523_BERLINA-3-VOL-4-PORTE/alfa-romeo-giulia-quadrifoglio-promo.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cumque sapiente, praesentium suscipit? Explicabo, dignissimos beatae? Rem incidunt, eius adipisci pariatur quod dolore quibusdam veniam, beatae debitis illo ratione amet.</p>
+			<button>Compra</button>
+		</div>
+		<div class="figlio">
+			<img src="https://cdn.drivek.it/configurator-imgs/cars/it/800/ALFA-ROMEO/GIULIA/3523_BERLINA-3-VOL-4-PORTE/alfa-romeo-giulia-quadrifoglio-promo.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cumque sapiente, praesentium suscipit? Explicabo, dignissimos beatae? Rem incidunt, eius adipisci pariatur quod dolore quibusdam veniam, beatae debitis illo ratione amet.</p>
+			<button>Compra</button>
+		</div>
+		<div class="figlio">
+			<img src="https://cdn.drivek.it/configurator-imgs/cars/it/800/ALFA-ROMEO/GIULIA/3523_BERLINA-3-VOL-4-PORTE/alfa-romeo-giulia-quadrifoglio-promo.jpg" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cumque sapiente, praesentium suscipit? Explicabo, dignissimos beatae? Rem incidunt, eius adipisci pariatur quod dolore quibusdam veniam, beatae debitis illo ratione amet.</p>
+			<button>Compra</button>
+		</div>
+	</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+	$(function () {
+		setTimeout(function(){ 
+    			$("link[rel='preload']").attr("rel","stylesheet")
+    		}, 3000);
+	});
+</script>
+</body>
+</html>
